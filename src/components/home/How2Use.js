@@ -3,7 +3,7 @@ import CodeBlock from "../CodeBlock";
 const How2Use = () => {
   return (
     <section>
-      <h3 className="section-title">How to use</h3>
+      <a href="#howtouse" className="section-title"># How to use</a>
       <div className="section-content">
         <p className="section-secondary-title">
           Import css and js files using CDN:

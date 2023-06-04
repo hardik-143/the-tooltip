@@ -14,7 +14,7 @@ const Placements = () => {
   return (
     <Fragment>
       <section>
-        <h3 className="section-title">Placements</h3>
+        <a href="#placements" className="section-title"># Placements</a>
         <p className="section-secondary-title">
           For Placements of tooltip, you can use{" "}
           <span className="tag bordered">data-ttooltip-placement</span>{" "}

@@ -5,7 +5,7 @@ const NoAnimation = () => {
   return (
     <>
       <section>
-        <h3 className="section-title">No Animation</h3>
+        <a href="#noanimation" className="section-title"># No Animation</a>
         <p className="section-secondary-title">
           To disable animation, you can use
           <span className="tag bordered">

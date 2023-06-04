@@ -29,4 +29,20 @@
     font-size: 1.5em;
     text-align: center;
   }
+  @media screen and (max-width:500px) {
+    .title-wrapper {
+      font-size: 3em;
+      height: 100px;
+      margin-bottom: 0;
+    }
+    .description {
+      font-size: 1.3em;
+    }
+  }
+  @media screen and (max-width:300px) {
+    .title-wrapper{
+      font-size: 2.6em;
+      height: 80px;
+    }
+  }
 }

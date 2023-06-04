@@ -5,7 +5,7 @@ const AlwaysVisible = () => {
   return (
     <>
       <section>
-        <h3 className="section-title">Always Visible</h3>
+        <a href="#alwaysvisible" className="section-title"># Always Visible</a>
         <p className="section-secondary-title">
           Use
           <span className="tag bordered">data-ttooltip-visible</span> attribute

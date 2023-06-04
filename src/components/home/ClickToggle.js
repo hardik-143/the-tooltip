@@ -5,7 +5,7 @@ const ClickToggle = () => {
   return (
     <>
       <section>
-        <h3 className="section-title">Toggle on click</h3>
+        <a href="#toggleonclick" className="section-title"># Toggle on click</a>
         <p className="section-secondary-title">
           To show tooltip on click, use
           <span className="tag bordered">data-ttooltip-toggle</span> attribute

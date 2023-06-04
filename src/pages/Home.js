@@ -6,10 +6,12 @@ import NoAnimation from "../components/home/NoAnimation";
 import AlwaysVisible from "../components/home/AlwaysVisible";
 import ClickToggle from "../components/home/ClickToggle";
 import Size from "../components/home/Size";
+import BetterExperienceModal from "../components/BetterExperienceModal";
 
 const Home = () => {
   return (
     <>
+      <BetterExperienceModal />
       <Hero />
       <How2Use />
       <hr />

@@ -3,6 +3,7 @@
 $theme-color: #ffe569;
 $secondary-color: #dc4444;
 $blue: #0079ff;
+$dark: #212529;
 $text-shadow: 1px 1px 2px rgb(0, 0, 0);
 $box-shadow: 0px 5px 10px rgba(10, 10, 10, 0.2);
 * {
@@ -74,3 +75,4 @@ button {
 }
 @import "./home.scss";
 @import "./section.scss";
+@import "./modal.scss";

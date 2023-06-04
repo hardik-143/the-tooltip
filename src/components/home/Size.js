@@ -6,7 +6,7 @@ const Size = () => {
   return (
     <Fragment>
       <section>
-        <h3 className="section-title">Size</h3>
+        <a href="#size" className="section-title"># Size</a>
         <p className="section-secondary-title">
             For Size of tooltip, you can use{" "}
           <span className="tag bordered">data-ttooltip-size</span>{" "}
