@@ -6,7 +6,7 @@ import NoAnimation from "../components/home/NoAnimation";
 import AlwaysVisible from "../components/home/AlwaysVisible";
 import ClickToggle from "../components/home/ClickToggle";
 import Size from "../components/home/Size";
-import BetterExperienceModal from "../components/BetterExperienceModal";
+import BetterExperienceModal from "../components/Modals/BetterExperienceModal";
 
 const Home = () => {
   return (

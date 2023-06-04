@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
+import { useGlobalContext } from "../../context";
 import { GrFormClose } from "react-icons/gr";
-import { useGlobalContext } from "../context";
-const BetterExperienceModal = () => {
+const Layout = ({ heading, content }) => {
   const { closeModal, setIsModalOpen, isMobile, isModalOpen } =
     useGlobalContext();
   const modalRef = useRef(null);
@@ -36,7 +36,7 @@ const BetterExperienceModal = () => {
       <div className="tt-modal-content" role="document">
         <div className="tt-modal-header">
           <h5 className="tt-modal-title" id="tt-modal-label">
-            Better Experience
+            {heading}
           </h5>
           <button
             className="tt-modal-close-btn"
@@ -46,14 +46,11 @@ const BetterExperienceModal = () => {
           </button>
         </div>
         <div className="tt-modal-body">
-          <p>
-            Try to use the-tooltip on your computer or laptop, you will get
-            better user experience.
-          </p>
+          <p>{content}</p>
         </div>
       </div>
     </div>
   );
 };
 
-export default BetterExperienceModal;
+export default Layout;
