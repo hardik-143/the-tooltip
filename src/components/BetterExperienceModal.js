@@ -12,6 +12,7 @@ const BetterExperienceModal = () => {
     } else {
       setIsModalOpen(false);
     }
+    // eslint-disable-next-line
   }, []);
 
   if (!isMobile() && !isModalOpen) {
