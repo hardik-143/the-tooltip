@@ -1,0 +1,25 @@
+@import "./fonts.scss";
+$theme-color: #ffe569;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $theme-color;
+  font-family: "Kanit", sans-serif;
+  // font-family: 'Poppins', sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none !important;
+}
+hr {
+  width: 100%;
+  max-width: 700px;
+  border: 1px solid #000;
+  margin: 30px auto 20px;
+}
+@import "./home.scss";
