@@ -20,9 +20,9 @@ const Hero = () => {
   return (
     <>
       <div className="hero">
-        <h1 class="title-wrapper">
-          <span class="text-wrapper">
-            <span class="letters">The Tooltip</span>
+        <h1 className="title-wrapper">
+          <span className="text-wrapper">
+            <span className="letters">The Tooltip</span>
           </span>
         </h1>
         <p className="description">

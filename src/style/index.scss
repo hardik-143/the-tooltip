@@ -1,5 +1,10 @@
 @import "./fonts.scss";
+@import "./_mixins.scss";
 $theme-color: #ffe569;
+$secondary-color: #dc4444;
+$blue: #0079ff;
+$text-shadow: 1px 1px 2px rgb(0, 0, 0);
+$box-shadow: 0px 5px 10px rgba(10, 10, 10, 0.2);
 * {
   margin: 0;
   padding: 0;
@@ -18,8 +23,54 @@ a {
 }
 hr {
   width: 100%;
-  max-width: 700px;
-  border: 1px solid #000;
-  margin: 30px auto 20px;
+  border: 1px solid $secondary-color;
+  margin: 30px auto;
+}
+pre {
+  margin: 0;
+}
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
+.tag {
+  background: #fff;
+  display: inline-block;
+  padding: 3px 10px;
+  margin: 4px;
+  // border-radius: 4px;
+  color: $secondary-color;
+  box-shadow: $box-shadow;
+  border: 1px solid transparent;
+  &.tag-blue {
+    color: $blue;
+    &.bordered {
+      border: 1px solid $blue;
+    }
+  }
+  &.tag-small {
+    font-size: 16px;
+  }
+  &.bordered {
+    border: 1px solid $secondary-color;
+  }
+}
+.tags-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5px;
+  .tag {
+    margin: 0;
+  }
+}
+.app-container {
+  padding: 0 10px;
+  .inner {
+    max-width: 1024px;
+    margin: auto;
+  }
 }
 @import "./home.scss";
+@import "./section.scss";
