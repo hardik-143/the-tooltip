@@ -1,5 +1,4 @@
-import React, { Fragment, useEffect } from "react";
-import { initTooltip } from "the-tooltip";
+import React, { Fragment } from "react";
 import CodeDemo from "../CodeDemo";
 const Placements = () => {
   const arr = [
@@ -12,9 +11,6 @@ const Placements = () => {
     "bottom-left",
     "bottom-right",
   ];
-  useEffect(() => {
-    initTooltip(document.querySelectorAll("[data-ttooltip]"));
-  }, []);
   return (
     <Fragment>
       <section>

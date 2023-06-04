@@ -1,11 +1,7 @@
-import React, { useEffect } from "react";
-import { initTooltip } from "the-tooltip";
+import React from "react";
 import CodeDemo from "../CodeDemo";
 const AlwaysVisible = () => {
   let htmlContent = `<button data-ttooltip data-ttooltip-visible data-ttooltip-text="Always Visible Tooltip" data-ttooltip-pos="top">Hover Here!!</button>`;
-  useEffect(() => {
-    initTooltip(document.querySelectorAll("[data-ttooltip]"));
-  }, []);
   return (
     <>
       <section>

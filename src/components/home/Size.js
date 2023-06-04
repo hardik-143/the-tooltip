@@ -1,12 +1,8 @@
-import React, { Fragment, useEffect } from "react";
-import { initTooltip } from "the-tooltip";
+import React, { Fragment } from "react";
 import CodeDemo from "../CodeDemo";
 
 const Size = () => {
   const arr = ["small", "medium", "large", "fit"];
-  useEffect(() => {
-    initTooltip(document.querySelectorAll("[data-ttooltip]"));
-  }, []);
   return (
     <Fragment>
       <section>

@@ -1,11 +1,7 @@
-import React, { useEffect } from "react";
-import { initTooltip } from "the-tooltip";
+import React from "react";
 import CodeDemo from "../CodeDemo";
 const ClickToggle = () => {
   let htmlContent = `<button data-ttooltip data-ttooltip-text="Click to toggle Toogle Tooltip" data-ttooltip-pos="top" data-ttooltip-toggle="click">Click Here!!</button>`;
-  useEffect(() => {
-    initTooltip(document.querySelectorAll("[data-ttooltip]"));
-  }, []);
   return (
     <>
       <section>
