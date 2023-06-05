@@ -21,7 +21,7 @@ const How2Use = () => {
           itself.
         </div>
       </div>
-      {/* <div className="section-content pt-3">
+      <div className="section-content pt-3">
         <p className="section-secondary-title">
           If you are using npm, install the-tooltip using npm:
         </p>
@@ -30,7 +30,7 @@ const How2Use = () => {
           Import css file in your index.js file:
         </p>
         <CodeBlock
-          text={`import "the-tooltip/css/the-tooltip.css";`}
+          text={`import "the-tooltip/dist/css/the-tooltip.css";`}
           allowCopy={true}
         />
         <p className="section-secondary-title">
@@ -47,7 +47,7 @@ const How2Use = () => {
           text={`initTooltip(document.querySelectorAll("[data-ttooltip]"));`}
           allowCopy={true}
         />
-      </div> */}
+      </div>
       <hr />
       <div className="section-secondary-title">
         you must have <span className="tag bordered">data-ttooltip</span>{" "}
