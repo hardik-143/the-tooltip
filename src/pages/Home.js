@@ -8,6 +8,7 @@ import ClickToggle from "../components/home/ClickToggle";
 import Size from "../components/home/Size";
 import BetterExperienceModal from "../components/Modals/BetterExperienceModal";
 import { initTooltip } from "the-tooltip";
+import Colored from "../components/home/Colored";
 const Home = () => {
   useEffect(() => {
     initTooltip(document.querySelectorAll("[data-ttooltip]"));
@@ -27,6 +28,8 @@ const Home = () => {
       <AlwaysVisible />
       <hr />
       <ClickToggle />
+      <hr />
+      <Colored/>
     </>
   );
 };
