@@ -34,15 +34,12 @@ const How2Use = () => {
           allowCopy={true}
         />
         <p className="section-secondary-title">
-          Import initTooltip function in your App.js file:
+          Import initTooltip function in your App.js file and initialize using initTooltip function:
         </p>
         <CodeBlock
           text={`import { initTooltip } from "the-tooltip";`}
           allowCopy={true}
         />
-        <p className="section-secondary-title">
-          Initialize the-tooltip using initTooltip function:
-        </p>
         <CodeBlock
           text={`initTooltip(document.querySelectorAll("[data-ttooltip]"));`}
           allowCopy={true}
