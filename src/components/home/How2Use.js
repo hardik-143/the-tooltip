@@ -16,10 +16,10 @@ const How2Use = () => {
           text={`<script src="https://cdn.jsdelivr.net/gh/hardik-143/plugin/the-tooltip/js/the-tooltip.js"></script>`}
           allowCopy={true}
         />
-        <div className="section-secondary-title">
-          there's no need to initialize the-tooltip, it will automatically by
+        <p className="section-secondary-title">
+        <span className="note-text">Note:</span> there's no need to initialize the-tooltip, it will automatically by
           itself.
-        </div>
+        </p>
       </div>
       <div className="section-content pt-3">
         <p className="section-secondary-title">
@@ -47,6 +47,10 @@ const How2Use = () => {
           text={`initTooltip(document.querySelectorAll("[data-ttooltip]"));`}
           allowCopy={true}
         />
+        <p className="section-secondary-title">
+        <span className="note-text">Note:</span> Try to initialize the-tooltip in useEffect hook with empty dependency array to avoid multiple initialization.
+        </p>
+        
       </div>
       <hr />
       <div className="section-secondary-title">

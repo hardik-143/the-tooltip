@@ -9,11 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
     <AppProvider>
-      <div className="app-container">
-        <div className="inner">
-          <App />
-        </div>
-      </div>
+      <App />
     </AppProvider>
   </>
 );
