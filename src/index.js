@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./style/index.scss";
 import App from "./App";
 import { AppProvider } from "./context";
-import "../node_modules/the-tooltip/dist/css/the-tooltip.css";
+import "the-tooltip/dist/css/the-tooltip.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
