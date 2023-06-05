@@ -34,7 +34,7 @@ const How2Use = () => {
           allowCopy={true}
         />
         <p className="section-secondary-title">
-          Import initTooltip function in your index.js file:
+          Import initTooltip function in your App.js file:
         </p>
         <CodeBlock
           text={`import { initTooltip } from "the-tooltip";`}
