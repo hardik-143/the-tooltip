@@ -1,5 +1,9 @@
 footer {
   background: $blue;
+  margin-top: 80px;
+  @media screen and (max-width: 768px) {
+    margin-top: 40px;
+  }
   .footer-inner {
     color: $white;
     display: flex;
