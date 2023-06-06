@@ -1,11 +1,14 @@
 import React from "react";
 import CodeDemo from "../CodeDemo";
-const AlwaysVisible = () => {
+const AlwaysVisible = ({ sectionId }) => {
   let htmlContent = `<button data-ttooltip data-ttooltip-visible data-ttooltip-text="Always Visible Tooltip" data-ttooltip-pos="top">Hover Here!!</button>`;
   return (
     <>
       <section>
-        <a href="#alwaysvisible" className="section-title"># Always Visible</a>
+        <span id={sectionId}></span>
+        <a href={`#${sectionId}`} className="section-title">
+          # Always Visible
+        </a>
         <p className="section-secondary-title">
           Use
           <span className="tag bordered">data-ttooltip-visible</span> attribute

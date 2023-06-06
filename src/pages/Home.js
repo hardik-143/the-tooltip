@@ -10,26 +10,36 @@ import BetterExperienceModal from "../components/Modals/BetterExperienceModal";
 import { initTooltip } from "the-tooltip";
 import Colored from "../components/home/Colored";
 const Home = () => {
+  const checkHash = () => {
+    if (window.location.hash) {
+      let hash = window.location.hash;
+      let element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView();
+      }
+    }
+  };
   useEffect(() => {
     initTooltip(document.querySelectorAll("[data-ttooltip]"));
+    checkHash();
   }, []);
   return (
     <>
       <BetterExperienceModal />
       <Hero />
-      <How2Use />
+      <How2Use sectionId={'howtouse'} />
       <hr />
-      <Placements />
+      <Placements sectionId={'placements'} />
       <hr />
-      <Size />
+      <Size sectionId={'size'} />
       <hr />
-      <NoAnimation />
+      <NoAnimation sectionId={'noanimation'} />
       <hr />
-      <AlwaysVisible />
+      <AlwaysVisible sectionId={'alwysvisible'} />
       <hr />
-      <ClickToggle />
+      <ClickToggle sectionId={'toggleonclick'} />
       <hr />
-      <Colored/>
+      <Colored sectionId={'colored'} />
     </>
   );
 };

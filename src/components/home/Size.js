@@ -1,16 +1,19 @@
 import React, { Fragment } from "react";
 import CodeDemo from "../CodeDemo";
 
-const Size = () => {
+const Size = ({ sectionId }) => {
   const arr = ["small", "medium", "large", "fit"];
   return (
     <Fragment>
       <section>
-        <a href="#size" className="section-title"># Size</a>
+        <span id={sectionId}></span>
+        <a href={`#${sectionId}`} className="section-title">
+          # Size
+        </a>
         <p className="section-secondary-title">
-            For Size of tooltip, you can use{" "}
-          <span className="tag bordered">data-ttooltip-size</span>{" "}
-          attribute. <br />
+          For Size of tooltip, you can use{" "}
+          <span className="tag bordered">data-ttooltip-size</span> attribute.{" "}
+          <br />
           It can have following values: <br />
         </p>
         <div className="tags-wrapper mb-2">

@@ -1,7 +1,7 @@
 import React from "react";
 import CodeDemo from "../CodeDemo";
 
-const Colored = () => {
+const Colored = ({ sectionId }) => {
   const arr = [
     "blue",
     "red",
@@ -24,7 +24,8 @@ const Colored = () => {
   return (
     <>
       <section>
-        <a href="#colored" className="section-title">
+        <span id={sectionId}></span>
+        <a href={`#${sectionId}`} className="section-title">
           # Colored
         </a>
         <p className="section-secondary-title">

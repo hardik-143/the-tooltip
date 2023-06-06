@@ -1,11 +1,14 @@
 import React from "react";
 import CodeDemo from "../CodeDemo";
-const NoAnimation = () => {
+const NoAnimation = ({ sectionId }) => {
   let htmlContent = `<button data-ttooltip data-ttooltip-blunt data-ttooltip-text="Tooltip without Animation" data-ttooltip-pos="top">Hover Here!!</button>`;
   return (
     <>
       <section>
-        <a href="#noanimation" className="section-title"># No Animation</a>
+        <span id={sectionId}></span>
+        <a href={`#${sectionId}`} className="section-title">
+          # No Animation
+        </a>
         <p className="section-secondary-title">
           To disable animation, you can use
           <span className="tag bordered">

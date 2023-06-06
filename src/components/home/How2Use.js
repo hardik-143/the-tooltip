@@ -1,9 +1,10 @@
 import React from "react";
 import CodeBlock from "../CodeBlock";
-const How2Use = () => {
+const How2Use = ({sectionId}) => {
   return (
     <section>
-      <a href="#howtouse" className="section-title"># How to use</a>
+      <span id={sectionId}></span>
+      <a href={`#${sectionId}`} className="section-title"># How to use</a>
       <div className="section-content">
         <p className="section-secondary-title">
           Import css and js files using CDN:
