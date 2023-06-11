@@ -4,11 +4,11 @@ import How2Use from "../components/home/How2Use";
 import Placements from "../components/home/Placements";
 import NoAnimation from "../components/home/NoAnimation";
 import AlwaysVisible from "../components/home/AlwaysVisible";
-import ClickToggle from "../components/home/ClickToggle";
 import Size from "../components/home/Size";
 import BetterExperienceModal from "../components/Modals/BetterExperienceModal";
 import { initTooltip } from "the-tooltip";
 import Colored from "../components/home/Colored";
+import TriggerTooltip from "../components/home/TriggerTooltip";
 const Home = () => {
   const checkHash = () => {
     if (window.location.hash) {
@@ -37,7 +37,7 @@ const Home = () => {
       <hr />
       <AlwaysVisible sectionId={'alwysvisible'} />
       <hr />
-      <ClickToggle sectionId={'toggleonclick'} />
+      <TriggerTooltip sectionId={'toggleonclick'} />
       <hr />
       <Colored sectionId={'colored'} />
     </>
