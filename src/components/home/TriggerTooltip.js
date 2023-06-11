@@ -1,16 +1,17 @@
 import React from "react";
 import CodeDemo from "../CodeDemo";
+import NoteText from "../common/NoteText";
 const TriggerTooltip = ({ sectionId }) => {
   const arr = [
     {
-        name: "click",
-        description: "Tooltip will be shown when click on the element.",
-        title: "click Here !!",
+      name: "click",
+      description: "Tooltip will be shown when click on the element.",
+      title: "click Here !!",
     },
     {
-        name: "contextmenu",
-        description: "Tooltip will be shown when right click on the element.",
-        title: "Right Click !!",
+      name: "contextmenu",
+      description: "Tooltip will be shown when right click on the element.",
+      title: "Right Click !!",
     },
   ];
   return (
@@ -35,10 +36,11 @@ const TriggerTooltip = ({ sectionId }) => {
             );
           })}
         </div>
-        <p className="section-secondary-title">
-          <span className="note-text">Note:</span> the default trigger event is{" "}
+        <NoteText>
+          {" "}
+          the default trigger event is{" "}
           <span className="tag bordered">hover</span>.
-        </p>
+        </NoteText>
         <div className="section-wrapper">
           {arr.map((item, index) => {
             let htmlContent = `<button data-ttooltip data-ttooltip-text="${item.name} Tooltip" data-ttooltip-pos="top" data-ttooltip-trigger="${item.name}">${item.title} tooltip</button>`;

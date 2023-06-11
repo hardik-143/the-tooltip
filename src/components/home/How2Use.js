@@ -1,10 +1,13 @@
 import React from "react";
 import CodeBlock from "../CodeBlock";
-const How2Use = ({sectionId}) => {
+import NoteText from "../common/NoteText";
+const How2Use = ({ sectionId }) => {
   return (
     <section>
       <span id={sectionId}></span>
-      <a href={`#${sectionId}`} className="section-title"># How to use</a>
+      <a href={`#${sectionId}`} className="section-title">
+        # How to use
+      </a>
       <div className="section-content">
         <p className="section-secondary-title">
           Import css and js files using CDN:
@@ -17,10 +20,10 @@ const How2Use = ({sectionId}) => {
           text={`<script src="https://cdn.jsdelivr.net/gh/hardik-143/plugin/the-tooltip/js/the-tooltip.js"></script>`}
           allowCopy={true}
         />
-        <p className="section-secondary-title">
-        <span className="note-text">Note:</span> there's no need to initialize the-tooltip, it will automatically by
+        <NoteText>
+          there's no need to initialize the-tooltip, it will automatically by
           itself.
-        </p>
+        </NoteText>
       </div>
       <div className="section-content pt-3">
         <p className="section-secondary-title">
@@ -35,7 +38,8 @@ const How2Use = ({sectionId}) => {
           allowCopy={true}
         />
         <p className="section-secondary-title">
-          Import initTooltip function in your App.js file and initialize using initTooltip function:
+          Import initTooltip function in your App.js file and initialize using
+          initTooltip function:
         </p>
         <CodeBlock
           text={`import { initTooltip } from "the-tooltip";`}
@@ -45,10 +49,10 @@ const How2Use = ({sectionId}) => {
           text={`initTooltip(document.querySelectorAll("[data-ttooltip]"));`}
           allowCopy={true}
         />
-        <p className="section-secondary-title">
-        <span className="note-text">Note:</span> Try to initialize the-tooltip in useEffect hook with empty dependency array to avoid multiple initialization.
-        </p>
-        
+        <NoteText>
+          Try to initialize the-tooltip in useEffect hook with empty dependency
+          array to avoid multiple initialization.
+        </NoteText>
       </div>
       <hr />
       <div className="section-secondary-title">
